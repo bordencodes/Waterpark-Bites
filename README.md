@@ -4,13 +4,11 @@
 
 ### By: Alaysia Veal, Sarah Yeager, and Bret Borden
 
-#### [LinkedIn](www.likedin.com) | [GitHub](www.github.com)
-
 ---
 
 ### **_Description_**
 
-#### Concession stand menu with add and delete options
+#### Waterpark-Bites is a web application that provides waterpark visitors a virtual menu to the waterpark concession stand. On this site, hungry waterpark goers will first enter the website landing page introducing them to the park. From here, visitors can navigate to the homepage. On the homepage, menu categories (drinks, food, dessert) are displayed. Customers can then click into each category to learn more about the different items within each category. Each item will display a description of the item and their cost. This page also offers the ability to create new menu items or delete existing items. Waterpark-Bites is a full-stack project created by a group of students through General Assembly’s Software Engineering Remote Immersive program to demonstrate their understanding of front and back end entities.
 
 ---
 
@@ -27,9 +25,9 @@
 
 #### View: [Trello Board](https://trello.com/b/ZTNv4HLq/project-management)
 
-#### View: [ERD](image_url)
+#### View: [ERD](https://postimg.cc/62zFTgJX)
 
-#### View: [Component Hierarchy Diagram](image_url)
+#### View: [Component Hierarchy Diagram](https://postimg.cc/kVLLD0pL)
 
 ---
 
@@ -51,9 +49,9 @@
 
 ### **_Future Updates_**
 
-- [] update
-- [] update
-- [] update
+- [] add update feature for weekly specials or changes in price
+- [] add water park theme related gifs
+- [] adapt for mobile version
 
 ---
 
