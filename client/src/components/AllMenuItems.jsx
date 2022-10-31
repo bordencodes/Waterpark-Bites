@@ -1,17 +1,19 @@
+import axios from 'axios'
+import {useState} from 'react'
+
 const AllMenuItems=()=>{
 
-// delete request
-// create request
+  const (formState, setFormState)=useState()
 
-  return <div>
-    {/* //list all menu items here  */}
+const deleteItem= async ()=>{
+let res= await axios.delete()
+// need a function here to render new list (after item deleted)
+}
 
-    <button >Create Item</button>
-    <button>Delete Item</button>
+  return
+  <div>
+    <button onClick={deleteItem}>Delete Item</button>
   </div>
 }
 
 export default AllMenuItems
-
-
-//using form here??
