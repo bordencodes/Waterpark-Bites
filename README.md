@@ -35,15 +35,13 @@
 
 ### **_Features_**
 
--
+- ***
 
----
-
-##### Home
+##### Image 1
 
 ![screenshot1](url)
 
-##### Phrases
+##### Image 2
 
 ![screenshot2](url)
 
