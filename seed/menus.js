@@ -1,5 +1,5 @@
 const db = require('../db')
-const Menu = require('../models/menu')
+const { Menus } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -12,7 +12,7 @@ const main = async () => {
       Items: [_id]
     }
   ]
-  await Menu.insertMany(menu)
+  await Menus.insertMany(menu)
   console.log('created menu!')
 }
 const run = async () => {

@@ -1,5 +1,5 @@
 const db = require('../db')
-const { items } = require('../models')
+const { Items } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -85,7 +85,7 @@ const main = async () => {
       cost: 2.99
     }
   ]
-  await items.insertMany(item)
+  await Items.insertMany(item)
   console.log('Created menu items')
 }
 const run = async () => {
