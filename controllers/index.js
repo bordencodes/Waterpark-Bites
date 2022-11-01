@@ -44,10 +44,20 @@ const findAllItems = async (req, res) => {
   }
 }
 
+const createOrder = async (req, res) => {
+  try {
+    let list = await Items.create(req.body)
+    res.send(list)
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 module.exports = {
   findFood,
   findDrink,
   findDessert,
   deleteItems,
-  findAllItems
+  findAllItems,
+  createOrder
 }
