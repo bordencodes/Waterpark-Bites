@@ -3,7 +3,8 @@ import {useState, useEffect} from 'react'
 
 const Desserts =()=>{
   const [list, setList]=useState([])
-/* hello */
+
+  //we're figuring it out!
   const getDesserts= async()=>{
   let res= await axios.get ('http://localhost:3001/dessert')
   console.log(res.data)
