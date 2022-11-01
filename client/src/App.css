@@ -22,6 +22,21 @@
   color: #61dafb;
 }
 
+.mainMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 15px 20px;
+  margin: 5px;
+}
+
+.menuList {
+  text-decoration: none;
+  font-size: 32px;
+}
 
 .landing{
   display: flex;
