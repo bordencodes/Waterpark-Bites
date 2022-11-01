@@ -1,13 +1,16 @@
 import axios from 'axios'
+import { useEffect } from 'react'
 import {useState} from 'react'
 
 const Drinks =()=>{
-  const initialState={
+  /* const initialState={
     item:'',
     description:'',
     cost:'',
     category:''
-  }
+  } */
+
+  const [list, setList] = useState([])
 
   const [formState, setFormState]= useState(initialState)
 
@@ -17,20 +20,30 @@ const Drinks =()=>{
   }
 
 
-  // const getDrinks= async()=>{
-  // let res= await axios.get ('http://localhost:3001/')
-  // }
+  const getDrinks= async()=>{
+  let res = await axios.get ('http://localhost:3001/drink')
+  console.log(res.data)
+  setList(res.data)
+  }
+
+  useEffect(() => {
+    getDrinks
+  },[])
 
   const handleChange= (event)=>{
     setFormState({...formState, [event.target.id]: event.target.value})
   }
 
   return <div>
-  <h2>Item:{Item.item}</h2>
-  <h2>Description:{Item.description}</h2>
-  <h2>Cost:${Item.cost}</h2>
-  <h4>Category{Item.category}</h4>
+    {list?.map((list) => (
+      <div key={list._id}>
+      <h2>Item:{list.item}</h2>
+  <h2>Description:{list.description}</h2>
+  <h2>Cost:${list.cost}</h2>
+  <h4>Category{list.category}</h4>
   <h2>Add a drink to the menu!</h2>
+      </div>
+    ))}
   <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="item">Item:</label>
       <input
