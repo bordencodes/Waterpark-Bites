@@ -8,7 +8,7 @@ const Landing = () => {
         Waterpark-Bites is your one-stop shop concession stand for all waterpark
         food. Take a break from your fun-filled day to enjoy some grub!
       </p>
-      <Link to="/">Home</Link>
+      <Link to="/">Menu</Link>
     </div>
   )
 }
