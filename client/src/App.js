@@ -3,11 +3,14 @@ import { Route, Routes } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Menu from './pages/Menu'
 import AllMenuItems from './pages/AllMenuItems'
+import Nav from './components/Nav'
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <header>
+        <Nav/>
+      </header>
       <main>
         <Routes>
           <Route path="/" element={<Landing />} />

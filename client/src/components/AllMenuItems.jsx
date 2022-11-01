@@ -3,7 +3,7 @@ import {useState} from 'react'
 
 const AllMenuItems=()=>{
 
-  const (formState, setFormState)=useState()
+  const [formState, setFormState]=useState()
 
 const deleteItem= async ()=>{
 let res= await axios.delete()

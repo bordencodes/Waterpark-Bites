@@ -2,7 +2,7 @@ import Drinks from './Drinks'
 import Food from './Food'
 import Desserts from './Desserts'
 
-const Menu =(props)=>{
+const Menu =()=>{
   return(
     <div>
       <Drinks/>
