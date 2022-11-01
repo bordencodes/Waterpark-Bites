@@ -1,3 +1,4 @@
+const { ObjectID } = require('bson')
 const db = require('../db')
 const { Menus } = require('../models')
 
@@ -9,7 +10,7 @@ const main = async () => {
       MenuCategory: ['Food', 'Drink', 'Desert'],
       Descriptions:
         'Come checkout our delicious food options at Waterpark Bites!',
-      Items: [_id]
+      Items: ['Item']
     }
   ]
   await Menus.insertMany(menu)
