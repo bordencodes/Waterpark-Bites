@@ -11,7 +11,7 @@ const Desserts =()=>{
   }
 
   useEffect(()=>{
-    getDesserts
+    getDesserts()
   }, [])
 
   return <div>

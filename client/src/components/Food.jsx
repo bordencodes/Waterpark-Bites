@@ -13,10 +13,10 @@ const Food =()=>{
   }
   
   useEffect(() => {
-    getFood
+    getFood()
   }, [])
 
-  return <div>
+  return (<div>
     {list?.map((list) => (
       <div key={list._id}>
       <h2>Item:{list.item}</h2>
@@ -26,7 +26,7 @@ const Food =()=>{
       <h2>Add a meal to the menu!</h2>
       </div>
     ))}
-  <form className="form" onSubmit={handleSubmit}>
+  {/* <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="item">Item:</label>
       <input
         className="form-text"
@@ -61,8 +61,8 @@ const Food =()=>{
         value={formState.category}
       />
       <button type="submit">Add My Meal!</button>
-    </form>
-</div>
+    </form> */}
+</div>)
 }
 
 export default Food

@@ -12,7 +12,7 @@ const Drinks =()=>{
 
   const [list, setList] = useState([])
 
-  const [formState, setFormState]= useState(initialState)
+  /* const [formState, setFormState]= useState(initialState) */
 
   const handleSubmit= async (event)=>{
     event.preventDefault()
@@ -27,14 +27,14 @@ const Drinks =()=>{
   }
 
   useEffect(() => {
-    getDrinks
+    getDrinks()
   },[])
 
-  const handleChange= (event)=>{
+ /*  const handleChange= (event)=>{
     setFormState({...formState, [event.target.id]: event.target.value})
-  }
+  } */
 
-  return <div>
+  return (<div>
     {list?.map((list) => (
       <div key={list._id}>
       <h2>Item:{list.item}</h2>
@@ -44,7 +44,7 @@ const Drinks =()=>{
   <h2>Add a drink to the menu!</h2>
       </div>
     ))}
-  <form className="form" onSubmit={handleSubmit}>
+  {/* <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="item">Item:</label>
       <input
         className="form-text"
@@ -79,8 +79,9 @@ const Drinks =()=>{
         value={formState.category}
       />
       <button type="submit">Add My Drink!</button>
-    </form>
-</div>
+    </form> */}
+</div> )
+
 }
 
 export default Drinks
