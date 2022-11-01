@@ -1,15 +1,15 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Landing from './pages/Landing'
-import Menu from './pages/Menu'
-import AllMenuItems from './pages/AllMenuItems'
+import Menu from './components/Menu'
+import AllMenuItems from './components/AllMenuItems'
 import Nav from './components/Nav'
 
 const App = () => {
   return (
     <div>
       <header>
-        <Nav/>
+        <Nav />
       </header>
       <main>
         <Routes>
