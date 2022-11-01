@@ -16,10 +16,6 @@ const AllMenuItems=()=>{
     getAllItems()
   },[])
 
-  const handleClick = async (e, obj) => {
-  e.preventDefault()
-await axios.delete('http://localhost:3001/menu/:id', {_id: obj})
-}
 
   return(
   <div>
@@ -27,7 +23,6 @@ await axios.delete('http://localhost:3001/menu/:id', {_id: obj})
     {formState?.map((form) =>(
       <div key={form._id}>
         <h2>{form.item}</h2>
-        <button onClick={handleClick}>Delete Item</button>
       </div>
     ))}
   </div>

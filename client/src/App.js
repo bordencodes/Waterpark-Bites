@@ -7,6 +7,7 @@ import Drinks from './components/Drinks'
 import Desserts from './components/Desserts'
 import AllMenuItems from './components/AllMenuItems'
 import Nav from './components/Nav'
+import Order from './components/Order'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/drink" element={<Drinks />} />
           <Route path="/dessert" element={<Desserts />} />
           <Route path="/allMenu" element={<AllMenuItems />} />
+          <Route path="/order" element={<Order />} />
         </Routes>
       </main>
     </div>
