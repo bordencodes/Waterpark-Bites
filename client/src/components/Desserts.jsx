@@ -24,7 +24,7 @@ const Desserts =()=>{
     <h2>Add a dessert to the menu!</h2>
     </div>
     ))}
-    <form className="form" onSubmit={handleSubmit}>
+    {/* <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="item">Item:</label>
       <input
         className="form-text"
@@ -59,7 +59,7 @@ const Desserts =()=>{
         value={formState.category}
       />
       <button type="submit">Add My Dessert!</button>
-    </form>
+    </form> */}
   </div>
 }
 

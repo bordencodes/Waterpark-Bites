@@ -13,5 +13,3 @@ const Landing = () => {
   )
 }
 export default Landing
-
-//link to homepage
