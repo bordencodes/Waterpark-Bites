@@ -1,18 +1,31 @@
 import axios from 'axios'
+import { useState, useEffect } from 'react'
 
 
 const Food =()=>{
 
-   // const getFood= async()=>{
-  // let res= await axios.get ('http://localhost:3001/')
-  // }
+  const [list, setList] = useState([])
+
+  const getFood = async()=>{
+  let res = await axios.get ('http://localhost:3001/food')
+  console.log(res.data)
+  setList(res.data)
+  }
   
+  useEffect(() => {
+    getFood
+  }, [])
+
   return <div>
-  <h2>Item:{Item.item}</h2>
-  <h2>Description:{Item.description}</h2>
-  <h2>Cost:{Item.cost}</h2>
-  <h4>Category{Item.category}</h4>
-  <h2>Add a meal to the menu!</h2>
+    {list?.map((list) => (
+      <div key={list._id}>
+      <h2>Item:{list.item}</h2>
+      <h2>Description:{list.description}</h2>
+      <h2>Cost:{list.cost}</h2>
+      <h4>Category{list.category}</h4>
+      <h2>Add a meal to the menu!</h2>
+      </div>
+    ))}
   <form className="form" onSubmit={handleSubmit}>
       <label htmlFor="item">Item:</label>
       <input
