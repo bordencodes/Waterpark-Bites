@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Londrina+Outline&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 
 .App {
   text-align: center;
@@ -33,7 +34,7 @@
   grid-template-columns: 1fr 10fr 1fr 1fr 1fr;
   align-items: center;
   text-decoration: none;
-  font-family: 'Londrina Outline';
+  font-family: 'Londrina Solid', cursive;
   background-color: lightgray;
   color: black;
   padding: 0;
@@ -52,10 +53,13 @@
   font-size: 48px;
 }
 
-.menuList {
+.menuList a {
   text-decoration: none;
   font-size: 30px;
-  font-family: 'Londrina Outline';
+  font-family: 'Londrina Solid';
+  padding: 0;
+  margin: 0;
+  color: black;
 }
 
 .landing{
