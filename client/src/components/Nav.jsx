@@ -6,7 +6,6 @@ const Nav = () => {
       <div className='mainTitle'>Waterpark-Bites</div>
       <Link to ="/menu" className='navLinks'>Menu </Link>
       <Link to ="/allMenu" className='navLinks'>All Items </Link>
-      <Link to="/order" className='navLinks'>Order </Link>
     </div>
 }
 

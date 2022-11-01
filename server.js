@@ -17,9 +17,10 @@ app.get('/hi', (req, res) => res.send('hello'))
 app.get('/food', controllers.findFood)
 app.get('/drink', controllers.findDrink)
 app.get('/dessert', controllers.findDessert)
-app.delete('/menu/:id', controllers.deleteItems)
+app.delete('/allItems/:id', controllers.deleteItems)
 app.get('/allItems', controllers.findAllItems)
 app.post('/order', controllers.createOrder)
+app.get('/menu', controllers.findMenu)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
