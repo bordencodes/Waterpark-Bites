@@ -1,10 +1,13 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const Food =()=>{
 
   const [list, setList] = useState([])
+
+  let navigate = useNavigate()
 
   const getFood = async()=>{
   let res = await axios.get ('http://localhost:3001/food')
@@ -22,8 +25,6 @@ const Food =()=>{
       <h2>Item:{list.item}</h2>
       <h2>Description:{list.description}</h2>
       <h2>Cost:{list.cost}</h2>
-      <h4>Category{list.category}</h4>
-      <h2>Add a meal to the menu!</h2>
       </div>
     ))}
   {/* <form className="form" onSubmit={handleSubmit}>
