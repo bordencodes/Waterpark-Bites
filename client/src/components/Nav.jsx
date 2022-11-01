@@ -6,7 +6,6 @@ const Nav =()=>{
       Waterpark-Bites
       <Link to ="/menu">Menu</Link>
       <Link to ="/allMenu">All Menu Items</Link>
-      <Link to="/order">Order</Link>
     </h3>
   </nav>
 }
