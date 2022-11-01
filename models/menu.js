@@ -5,7 +5,7 @@ const Menu = new Schema(
   {
     MenuCategory: { type: Array, required: true },
     Descriptions: { type: String },
-    Items: { type: Schema.Types.ObjectId, ref: 'Item' }
+    Items: [{ type: Schema.Types.ObjectId, ref: 'Item' }]
   },
   { timestamps: true }
 )
