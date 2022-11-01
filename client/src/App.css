@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
   border: 1px solid black;
   background-color: rgb(170, 170, 244);
   font-size: 30px;
@@ -35,4 +36,5 @@
   background-size: "cover";
   background-repeat: no-repeat;
   height: 100%; */
+  background-image: url("https://media2.giphy.com/media/Y4mbeBMmK0BHhg0o7I/200w.webp?cid=ecf05e47mlf3pheyqegyget02my7y9sc6zdvwt9dzombazuu&rid=200w.webp&ct=g");
 }
