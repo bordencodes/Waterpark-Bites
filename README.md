@@ -37,13 +37,13 @@
 
 ##### Landing Page
 
-![Landing Page](https://files.slack.com/files-pri/T0351JZQ0-F048RUM5W7R/screen_shot_2022-11-02_at_11.26.57_am.png)
+![Landing Page](https://user-images.githubusercontent.com/95553482/199534633-fa27735a-bfce-49fb-a94e-c1f0922aa6bc.png)
 
 ##### Menu Items
 
-![Menu Items](https://files.slack.com/files-pri/T0351JZQ0-F0498USHL6Q/screen_shot_2022-11-02_at_11.31.12_am.png)
+![Menu Items](https://user-images.githubusercontent.com/95553482/199534886-26ce5cfc-7340-467a-86c0-2ef48a12ffe8.png)
 
-#### View App on: [Heroku](herokuapp.com/)
+#### View App on: [Heroku](https://waterpark-bites.herokuapp.com/)
 
 ---
 
@@ -61,10 +61,8 @@
 
 ##### [MDN](https://developer.mozilla.org/en-US/)
 
-##### [Landing Page Gif](https://developer.mozilla.org/en-US/)
+##### [Gif Credits](Giphy.com)
 
-##### [Menu Page Gif](https://developer.mozilla.org/en-US/)
-
-##### [Google Fonts](https://developer.mozilla.org/en-US/)
+##### [Google Fonts](https://fonts.google.com/specimen/Londrina+Solid)
 
 ##### Class Notes
