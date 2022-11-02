@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/drink" element={<Drinks />} />
           <Route path="/dessert" element={<Desserts />} />
           <Route path="/allMenu" element={<AllMenuItems />} />
+          <Route path="/allItems/:id" element={<AllMenuItems />} />
         </Routes>
       </main>
     </div>

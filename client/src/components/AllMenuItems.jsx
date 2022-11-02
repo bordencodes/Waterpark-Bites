@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect } from 'react'
 import {useState} from 'react'
+import { useParams} from 'react-router-dom'
 
 const AllMenuItems=({_id})=>{
   const [remove, removeItem] = useState('')
@@ -9,7 +10,6 @@ const AllMenuItems=({_id})=>{
   const [formState, setFormState] = useState(initialState)
   const [itemAdded, toggleItemAdded] = useState(false)
 
-useEffect(() => {
     const getOrder = async () => {
       try {
         let res = await axios.get('http://localhost:3001/allItems')
@@ -19,12 +19,15 @@ useEffect(() => {
         console.log(err)
       }
     }
-    getOrder()
+
+    useEffect(() => {
+      getOrder()
   }, [itemAdded]) 
 
-    const handleClick = async (e, objId) => {
+    const handleClick = async (e, ObjectId) => {
       e.preventDefault()
-      await axios.delete(`http://localhost:3001/allItems/${_id}`, {_id: objId})
+      await axios.delete(`http://localhost:3001/allItems/${ObjectId}`)
+      getOrder()
     }
 
   const handleSubmit = (e) => {
@@ -35,9 +38,6 @@ useEffect(() => {
   }
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.id]: e.target.value })
-  }
-  const handleItemChange = (e) => {
-    removeItem({ ...remove, [e.target.id]: e.target.value })
   }
   return(
     <div>
