@@ -63,6 +63,6 @@
 
 ##### [Gif Credits](Giphy.com)
 
-##### [Google Fonts](https://developer.mozilla.org/en-US/)
+##### [Google Fonts](https://fonts.google.com/specimen/Londrina+Solid)
 
 ##### Class Notes
