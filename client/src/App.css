@@ -109,3 +109,48 @@
   background-color: rgb(192, 227, 246);
   height: 100vh;
 }
+
+.price, .description{
+  display: inline;
+}
+.delete {
+  border: solid black;
+  border-radius: 10%;
+  display: block;
+  margin: auto;
+  width: 30px;
+  background-color: aliceblue;
+}
+.Items {
+  text-align: center;
+  font-family: 'Londrina Solid';
+  background-color: rgb(192, 227, 246);
+  margin: -22px;
+}
+.form{
+  width: 100px;
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+textarea{
+  height: 40px;
+  width: 200px;
+  margin-top: 10px;
+}
+input[type=text] {
+  margin-top: 10px;
+}
+.item{
+  margin-top: 20px;
+}
+button{
+  margin-top: 20px;
+  height: 20px;
+  width: 100px;
+  background-color: grey;
+  margin-bottom: 10px;
+  font-family: 'Londrina Solid';
+}
