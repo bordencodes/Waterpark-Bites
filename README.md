@@ -50,6 +50,7 @@
 - [] remove delete button on all menu items
 - [] inlcude add and delete feature on order option
 - [] adapt for mobile version
+- [] improve CSS styling
 
 ---
 
