@@ -49,8 +49,10 @@
 
 ### **_Future Updates_**
 
-- [] add update feature for weekly specials or changes in price
-- [] add water park theme related gifs
+- [] add and update a feature for weekly specials or changes in price
+- [] add an order option on the site to select drinks, food, and dessert
+- [] remove delete button on all menu items
+- [] inlcude add and delete feature on order option
 - [] adapt for mobile version
 
 ---
@@ -58,5 +60,11 @@
 ### **_Credits_**
 
 ##### [MDN](https://developer.mozilla.org/en-US/)
+
+##### [Landing Page Gif](https://developer.mozilla.org/en-US/)
+
+##### [Menu Page Gif](https://developer.mozilla.org/en-US/)
+
+##### [Google Fonts](https://developer.mozilla.org/en-US/)
 
 ##### Class Notes
