@@ -1,6 +1,6 @@
 # Waterpark-Bites
 
-## Date: 10/31/2022
+## Date: 11/02/2022
 
 ### By: Alaysia Veal, Sarah Yeager, and Bret Borden
 
@@ -35,13 +35,13 @@
 
 - ***
 
-##### Image 1
+##### Landing Page
 
-![screenshot1](url)
+![Landing Page](https://files.slack.com/files-pri/T0351JZQ0-F048RUM5W7R/screen_shot_2022-11-02_at_11.26.57_am.png)
 
-##### Image 2
+##### Menu Items
 
-![screenshot2](url)
+![Menu Items](https://files.slack.com/files-pri/T0351JZQ0-F0498USHL6Q/screen_shot_2022-11-02_at_11.31.12_am.png)
 
 #### View App on: [Heroku](herokuapp.com/)
 
