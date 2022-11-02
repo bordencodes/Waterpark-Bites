@@ -16,16 +16,18 @@ const Desserts =()=>{
     getDesserts()
   }, [])
 
-  return <div>
-    {list?.map((list)=>(
-    <div key={list._id}>
-    <h2>Item:{list.item}</h2>
-    <h2>Description:{list.description}</h2>
-    <h2>Cost:{list.cost}</h2>
-    </div>
+  return (<div className="category-page">
+    {list?.map((list) => (
+      <div key={list._id}>
+      <section className="item-cost">
+      <h2>{list.item}</h2>
+      <h2>Price: ${list.cost}</h2>
+      </section>
+      <p className="item-description">{list.description}</p>
+      </div>
     ))}
-    
-  </div>
+ 
+</div> )
 }
 
 export default Desserts
