@@ -40,20 +40,21 @@ const AllMenuItems=({_id})=>{
     setFormState({ ...formState, [e.target.id]: e.target.value })
   }
   return(
-    <div>
+    <div className='Items'>
     <h1>All Menu Items</h1>
     {orders?.map((order) => (
       <div key={order._id}>
         <h2>{order.item}</h2>
-        <h3>{order.description}</h3>
-        <h4>{order.cost}</h4>
-        <button onClick={(e) => handleClick(e, order._id)}>-</button>
+        <h3 className='description'>{order.description}</h3>
+        <div></div>
+        <h4 className='price'>{order.cost}</h4>
+        <button onClick={(e) => handleClick(e, order._id)} className='delete'>-</button>
       </div>
     ))} 
     <form className="form" 
     onSubmit={handleSubmit} 
     >
-      <label htmlFor="item">Item:</label>
+      <label htmlFor="item"><div className='item'>Item:</div></label>
       <input
         className="form-text"
         onChange={handleChange} 
@@ -70,7 +71,7 @@ const AllMenuItems=({_id})=>{
         cols="30"
         rows="10"
       ></textarea>
-      <label htmlFor="cost">Cost:$</label>
+      <label htmlFor="cost">Price:$</label>
       <input
         className="form-text"
         onChange={handleChange} 
@@ -78,7 +79,7 @@ const AllMenuItems=({_id})=>{
         id="cost"
         value={formState.cost} 
       />
-      <button type="submit">Add a customized item!</button>
+      <button type="submit">Add item!</button>
     </form> 
     </div>
   )
