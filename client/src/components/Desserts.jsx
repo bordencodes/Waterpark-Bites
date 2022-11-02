@@ -1,13 +1,12 @@
 import axios from 'axios'
 import {useState, useEffect} from 'react'
-import { useNavigate } from 'react-router-dom'
+
 
 const Desserts =()=>{
   const [list, setList]=useState([])
-/* hello */
-  let navigate = useNavigate()
+
   const getDesserts= async()=>{
-  let res= await axios.get ('http://localhost:3001/dessert')
+  let res= await axios.get ('/dessert')
   console.log(res.data)
   setList(res.data)
   }
@@ -26,7 +25,7 @@ const Desserts =()=>{
       <p className="item-description">{list.description}</p>
       </div>
     ))}
- 
+
 </div> )
 }
 

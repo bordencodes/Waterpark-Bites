@@ -1,21 +1,12 @@
 import axios from 'axios'
 import { useEffect } from 'react'
 import {useState} from 'react'
-import {useNavigate} from 'react-router-dom'
 
 const Drinks =()=>{
-  /* const initialState={
-    item:'',
-    description:'',
-    cost:'',
-    category:''
-  } */
-
-  let navigate = useNavigate
   const [list, setList] = useState([])
 
   const getDrinks= async()=>{
-  let res = await axios.get ('http://localhost:3001/drink')
+  let res = await axios.get ('/drink')
   console.log(res.data)
   setList(res.data)
   }
@@ -23,10 +14,6 @@ const Drinks =()=>{
   useEffect(() => {
     getDrinks()
   },[])
-
-/*  const handleChange= (event)=>{
-    setFormState({...formState, [event.target.id]: event.target.value})
-  } */
 
   return (<div className="category-page">
     {list?.map((list) => (
@@ -38,7 +25,7 @@ const Drinks =()=>{
       <p className="item-description">{list.description}</p>
       </div>
     ))}
- 
+
 </div> )
 
 }
