@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 require('dotenv').config()
 
 let MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/menuDatabase'
+  'mongodb+srv://marie:xMPPKvGKVb3aGBDg@cluster0.spvm1i8.mongodb.net/?retryWrites=true&w=majority' ||
+  'mongodb://127.0.0.1:27017/menuDatabase'
 
 mongoose
   .connect(MONGODB_URI)
