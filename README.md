@@ -31,10 +31,6 @@
 
 ---
 
-### **_Features_**
-
-- ***
-
 ##### Landing Page
 
 ![Landing Page](https://user-images.githubusercontent.com/95553482/199534633-fa27735a-bfce-49fb-a94e-c1f0922aa6bc.png)
@@ -54,6 +50,7 @@
 - [] remove delete button on all menu items
 - [] inlcude add and delete feature on order option
 - [] adapt for mobile version
+- [] improve CSS styling
 
 ---
 
